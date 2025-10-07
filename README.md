@@ -46,7 +46,7 @@
 
 ---
 
-**👨‍💻 Built by:** [Your Name]  
-**📧 Contact:** your.email@domain.com  
+**👨‍💻 Built by:** Lamar Scott  
+**📧 Contact:** scottlamar05@gmail.com  
 **🌐 Live Demo:** [Dashboard](http://192.168.122.223:3333)  
-**📱 LinkedIn:** [Profile Link](https://linkedin.com/in/yourprofile)
+**📱 LinkedIn:** https://linkedin.com/in/lamar-s-b02100260/
