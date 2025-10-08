@@ -1,13 +1,13 @@
 # Enterprise DevSecOps Homelab
 
-[![Live Dashboard](https://img.shields.io/badge/Dashboard-Live-brightgreen)](http://192.168.122.223:3333)
+[![Live Dashboard](https://img.shields.io/badge/Dashboard-Live-brightgreen)](http://100.114.133.45:3333)
 [![GitHub](https://img.shields.io/badge/GitHub-lamsec94-blue)](https://github.com/lamsec94)
 
 > **Production-grade DevSecOps platform with interactive dashboard**
 
 ## 🎯 Live Interactive Dashboard
 
-**Dashboard URL:** [http://192.168.122.223:3333](http://192.168.122.223:3333)
+**Dashboard URL:** [http://100.114.133.45:3333](http://100.114.133.45:3333)
 
 ![Homelab Dashboard](https://i.imgur.com/placeholder.png)
 *Interactive dashboard showcasing 13 production services*
@@ -48,5 +48,5 @@
 
 **👨‍💻 Built by:** Lamar Scott  
 **📧 Contact:** scottlamar05@gmail.com  
-**🌐 Live Demo:** [Dashboard](http://192.168.122.223:3333)  
+**🌐 Live Demo:** [Dashboard](http://100.114.133.45:3333)  
 **📱 LinkedIn:** https://linkedin.com/in/lamar-s-b02100260/
