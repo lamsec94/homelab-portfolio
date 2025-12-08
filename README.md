@@ -1,14 +1,16 @@
 # Production IT Infrastructure Homelab
 
-[![Uptime](https://img.shields.io/badge/Uptime-99%25%2B-brightgreen)](http://uptime.lab)
+[![Uptime](https://img.shields.io/badge/Uptime-99%25%2B-brightgreen)]()
 [![Services](https://img.shields.io/badge/Services-15%2B-blue)]()
 [![Security](https://img.shields.io/badge/SIEM-Wazuh-red)]()
 
 > **Enterprise-grade security monitoring, network management, and systems administration**
 
-## 🎯 Live Infrastructure Dashboard
+## 🎯 Infrastructure Access
 
-**Heimdall Dashboard:** [Access via VPN] | **Uptime Status:** [http://uptime.lab](http://uptime.lab)
+**Service Dashboard:** Secured via VPN  
+**Architecture:** Multi-VLAN segmentation with centralized reverse proxy  
+**Access Model:** Zero-trust, VPN-required for all management interfaces
 
 ![Homelab Architecture](https://i.imgur.com/your-network-diagram.png)
 *Multi-VLAN architecture with 15+ monitored services achieving 99%+ uptime*
@@ -39,10 +41,11 @@
 - **Resource Management** - 48GB RAM / 2TB SSD optimized allocation
 
 **Network Architecture:**
-- **Multi-VLAN Design** - Network segmentation (VLAN 11: Lab, VLAN 30: Services)
-- **Custom DNS Namespace** - 17 internal service routes (*.lab domains)
+- **Multi-VLAN Design** - Network segmentation for security isolation
+- **Custom DNS Namespace** - Internal .lab domain routing via reverse proxy
 - **Nginx Reverse Proxy** - Centralized SSL termination and service routing
-- **Tailscale VPN** - Secure remote access with subnet routing
+- **Tailscale VPN** - Secure remote access with subnet routing (WireGuard protocol)
+- **Zero Trust Model** - VPN-required access to all management interfaces
 
 **Hardware:**
 - Lenovo ThinkCentre M910 Tower (Intel i7-6700, 48GB RAM, 2TB SSD)
@@ -67,6 +70,28 @@
 
 ---
 
+## 🔐 Security Approach
+
+**Access Control:**
+- All services behind Nginx reverse proxy (single entry point)
+- VPN-required access for internal management interfaces
+- Custom DNS namespace isolated from public internet
+- No direct exposure of internal service ports or IPs
+
+**Monitoring & Detection:**
+- SIEM monitoring all authentication attempts and system events
+- IDS/IPS analyzing all network traffic for threats
+- DNS-based threat blocking at network perimeter
+- 24/7 uptime monitoring with automated alerting
+
+**Defense in Depth:**
+- Network segmentation via VLANs
+- Centralized logging and alerting (Wazuh)
+- Encrypted remote access (Tailscale VPN)
+- Regular security updates and patching
+
+---
+
 ## 📈 Key Achievements
 
 | Metric | Result |
@@ -75,7 +100,7 @@
 | **Monitored Endpoints** | 10+ Linux systems (Debian, Ubuntu, containers) |
 | **Security Coverage** | SIEM + IDS/IPS with 30k+ threat signatures |
 | **DNS Filtering** | 300k+ malicious domains blocked |
-| **Network Segmentation** | 2 VLANs with custom routing |
+| **Network Segmentation** | Multi-VLAN architecture with isolated subnets |
 | **Services Managed** | 15+ production applications |
 
 ---
@@ -103,7 +128,7 @@
 - VLAN configuration and network segmentation
 - DNS/DHCP service management
 - Reverse proxy configuration (Nginx)
-- VPN deployment (Tailscale, subnet routing)
+- VPN deployment (Tailscale, WireGuard)
 - TCP/IP, subnetting, routing fundamentals
 
 **Monitoring & Troubleshooting:**
@@ -130,28 +155,29 @@
 ## 📁 Infrastructure Services
 
 ### Security Stack
-- **Wazuh SIEM** (Container 105) - Security monitoring, log aggregation
-- **Suricata IDS/IPS** (Container 104) - Network intrusion detection
-- **AdGuard Home** (Raspberry Pi 5) - DNS filtering, custom namespace
+- **Wazuh SIEM** - Security monitoring, log aggregation, threat detection
+- **Suricata IDS/IPS** - Network intrusion detection with signature-based analysis
+- **AdGuard Home** - DNS filtering, custom namespace, 300k+ blocklist
 
 ### Core Infrastructure
-- **Proxmox VE** (192.168.11.10) - Hypervisor host
-- **CasaOS** (Container 113) - Docker container platform
-- **Nginx Proxy Manager** (Container 112) - Reverse proxy, SSL
-- **Uptime Kuma** - 24/7 service monitoring
+- **Proxmox VE** - Type-1 hypervisor managing 10+ LXC containers
+- **CasaOS** - Docker container orchestration platform
+- **Nginx Proxy Manager** - Centralized reverse proxy and SSL management
+- **Uptime Kuma** - 24/7 service health monitoring
 
 ### Applications & Services
-- **NextCloud** (Container 106) - Cloud storage
-- **GLPI** (Container 110) - IT ticketing and asset management
-- **Vaultwarden** - Password management
-- **Heimdall** - Service dashboard
-- **Portainer** - Container management
+- **NextCloud** - Self-hosted cloud storage and collaboration
+- **GLPI** - IT ticketing system and asset management
+- **Vaultwarden** - Password manager for infrastructure credentials
+- **Heimdall** - Centralized service dashboard
+- **Portainer** - Docker container management interface
 - **Docmost** - Technical documentation wiki
 
 ### Network Services
-- **TP-Link ER7206** (192.168.11.1) - Business gateway router
-- **Netgear Switch** - Managed VLAN configuration
-- **Tailscale VPN** - Secure remote access
+- **TP-Link ER7206 Router** - Business-class gateway with VLAN support
+- **Netgear Managed Switch** - VLAN segmentation and traffic control
+- **Tailscale VPN** - Secure remote access via WireGuard protocol
+- **Custom DNS** - Internal .lab namespace with AdGuard filtering
 
 ---
 
@@ -169,7 +195,9 @@ This homelab demonstrates practical IT skills for:
 
 ## 📸 Screenshots
 
-*Coming soon: Network diagram, Wazuh dashboard, Uptime Kuma monitoring, Heimdall interface*
+*Coming soon: Network diagram (sanitized), Wazuh dashboard, Uptime Kuma monitoring, service architecture*
+
+> Note: Internal IPs and sensitive details omitted for security
 
 ---
 
@@ -177,6 +205,11 @@ This homelab demonstrates practical IT skills for:
 **📧 Contact:** [scottlamar05@gmail.com](mailto:scottlamar05@gmail.com)  
 **💼 LinkedIn:** [https://linkedin.com/in/lamar-s-b02100260/](https://linkedin.com/in/lamar-s-b02100260/)  
 **📁 GitHub:** [lamsec94](https://github.com/lamsec94)  
+
+---
+
+*This homelab demonstrates enterprise IT infrastructure skills while maintaining security best practices. All sensitive details sanitized for public portfolio.*
+
 
 ---
 
