@@ -12,7 +12,7 @@
 **Architecture:** Multi-VLAN segmentation with centralized reverse proxy  
 **Access Model:** Zero-trust, VPN-required for all management interfaces
 
-![Homelab Architecture](https://imgur.com/a/z4GC9Gf)
+![image alt](https://github.com/lamsec94/homelab-portfolio/blob/7895feebcec53e8ef07a88868ae655910d98bbcd/a5b17076-659f-45b9-97ec-59acbda13355.jpg)
 *Multi-VLAN architecture with 15+ monitored services achieving 99%+ uptime*
 
 ---
