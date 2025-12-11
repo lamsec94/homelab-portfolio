@@ -12,7 +12,6 @@
 **Architecture:** Multi-VLAN segmentation with centralized reverse proxy  
 **Access Model:** Zero-trust, VPN-required for all management interfaces
 
-![image alt](https://github.com/lamsec94/homelab-portfolio/blob/7895feebcec53e8ef07a88868ae655910d98bbcd/a5b17076-659f-45b9-97ec-59acbda13355.jpg)
 *Multi-VLAN architecture with 15+ monitored services achieving 99%+ uptime*
 
 ---
@@ -194,6 +193,9 @@ This homelab demonstrates practical IT skills for:
 ---
 
 ## 📸 Screenshots
+
+
+![image alt](https://github.com/lamsec94/homelab-portfolio/blob/7895feebcec53e8ef07a88868ae655910d98bbcd/a5b17076-659f-45b9-97ec-59acbda13355.jpg)
 
 *Coming soon: Network diagram (sanitized), Wazuh dashboard, Uptime Kuma monitoring, service architecture*
 
