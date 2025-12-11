@@ -201,9 +201,6 @@ This homelab demonstrates practical IT skills for:
 
 ![Wazuh Dashboard](https://raw.githubusercontent.com/lamsec94/homelab-portfolio/main/swappy-20251211-001702.png)
 
-*Coming soon: Network diagram (sanitized), Wazuh dashboard, Uptime Kuma monitoring, service architecture*
-
-> Note: Internal IPs and sensitive details omitted for security
 
 ---
 
