@@ -8,7 +8,7 @@ dual-identity management, and GitOps-driven automation.
 
 ## Architecture
 
-![Homelab Network Architecture](diagram/homelab-architecture-march2026.png)
+![Homelab Network Architecture](diagram/HOMELAB-NETWORK-ARCHITECTURE.png)
 
 ## What I Built
 
